@@ -1,0 +1,12 @@
+Source: mountbox-antix
+Section: system
+Priority: required
+Maintainer: anticapitalista <antiX@operamail.com>
+Build-Depends: debhelper (>= 9.20120115)
+Standards-Version: 3.9.4
+Homepage: http://antix.mepis.org
+
+Package: mountbox-antix
+Depends: gtkdialog, pmount, rox-filer
+Architecture: all
+Description: Gui to mount/unmount devices.         
