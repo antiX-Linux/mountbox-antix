@@ -1,14 +1,14 @@
 #! /bin/bash
-# 
+#
 # Gtkdialog box for the mount command. Part of SliTaz tools.
 # adapted for use on antiX by anticapitalista@antiX.operamail.com
-VERSION=20110421
+VERSION=20161227
 
 export BLKID_LIST='
 <window title="blkid -o full" icon-name="media-flash">
   <vbox>
     <text use-markup="true">
-      <label>"<b>Harddisk devices list</b>"</label>
+      <label>"<b>storage devices list</b>"</label>
     </text>
     <frame Partitions table>
       <text wrap="false" width-chars="88">
@@ -17,26 +17,28 @@ export BLKID_LIST='
     </frame>
     <hbox>
       <button>
+        <variable>OK_CLOSE</variable>
         <input file icon="exit"></input>
-        <action type="closewindow">BLKID_LIST</action>
+        <action type="closewindow">OK_CLOSE</action>
       </button>
     </hbox>
   </vbox>
 </window>
 '
 
-# Mount button to use pmount to auto-open cd, dvd or usb device in Rox 
+# Mount button to use pmount to auto-open cd, dvd or usb device in Rox
 #
 export MOUNT_DIALOG='
 <window title="antiX-Mountbox" icon-name="media-flash">
   <vbox>
-     <text use-markup="true">
-      <label>"<b>antiX - Mountbox</b>"</label>
+    <text wrap="true" width-chars="72" use-markup="true">
+      <label>"Use this utility to mount a storage device in /media.
+Device can be flash key, pendrive, cd/dvd, or any USB device.
+
+You can unmount a currently mounted device using the button here,
+<b>or</b> perform the unmount operation via rox-filer or spacefm file manager."</label>
     </text>
-    <text wrap="true" width-chars="44" use-markup="true">
-      <label>"Mount device in /media. Device can be flash key, cd/dvd or any USB device. Unmount device in rox."</label>
-    </text>
-  
+
     <frame Configuration>
       <hbox>
         <text use-markup="true">
@@ -49,7 +51,7 @@ export MOUNT_DIALOG='
         <button>
           <label>List</label>
           <input file icon="drive-harddisk"></input>
-	  <action type="launch">BLKID_LIST</action>
+      <action type="launch">BLKID_LIST</action>
         </button>
       </hbox>
       <hbox>
@@ -62,7 +64,7 @@ export MOUNT_DIALOG='
         </entry>
       </hbox>
     </frame>
-    
+
     <hbox>
       <button>
         <label>Mount</label>
@@ -80,7 +82,7 @@ export MOUNT_DIALOG='
         <action type="exit">Exit</action>
       </button>
     </hbox>
-  
+
   </vbox>
 </window>
 '
