@@ -1,3 +1,27 @@
+mountbox-antix (0.1.7) unstable; urgency=medium
+
+  * Fixed broken deb build
+
+ -- anticapitalista <antix@operamail.com>  Tue, 13 Mar 2018 13:55:00 +0200
+
+mountbox-antix (0.1.6) unstable; urgency=medium
+
+  * added localisation
+
+ -- anticapitalista <antix@operamail.com>  Sun, 04 Mar 2018 22:49:15 +0200
+
+mountbox-antix (0.1.5) unstable; urgency=medium
+
+  * Show in Applications menu
+
+ -- anticapitalista <antix@operamail.com>  Sat, 07 Oct 2017 23:33:14 +0300
+
+mountbox-antix (0.1.4) unstable; urgency=medium
+
+  * fix RedX button "close child window" action - skidoo 
+
+ -- anticapitalista <antix@operamail.com>  Fri, 06 Jan 2017 15:25:52 +0200
+
 mountbox-antix (0.1.3) unstable; urgency=low
  
   * Added icon to .desktop file

@@ -1,9 +1,12 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=antiX-mountbox
+Name=Mountbox
+Name[el]=Mountbox
+Comment=Mount internal and external devices
+Comment[el]=Τοποθετήστε εσωτερικές και εξωτερικές συσκευές
 Exec=mountbox
 Icon=mountbox
 Terminal=false
 Type=Application
 Categories=System;
-NoDisplay=True
+NoDisplay=False

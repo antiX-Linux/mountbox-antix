@@ -1,4 +1,4 @@
-antiX-mountbox.desktop /usr/share/applications/antix
-changelog.gz           /usr/share/doc/mountbox-antix
-copyright              /usr/share/doc/mountbox-antix
-mountbox.png           /usr/share/pixmaps
+antiX-mountbox.desktop 		usr/share/applications/antix
+locale/* 					usr/share/locale
+mountbox.png 			usr/share/pixmaps
+mountbox 				usr/local/bin
